@@ -22,6 +22,7 @@ if ($platformsh->hasRelationship('mariadb')) {
     'database' => $creds['path'],
     'username' => $creds['username'],
     'password' => $creds['password'],
+    'namespace' => 'Drupal\\mysql\\Driver\\Database\\mysql',
     'host' => $creds['host'],
     'port' => $creds['port'],
     'pdo' => [PDO::MYSQL_ATTR_COMPRESS => !empty($creds['query']['compression'])],
