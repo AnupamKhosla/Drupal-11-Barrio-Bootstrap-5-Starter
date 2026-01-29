@@ -4,25 +4,31 @@
  * Upsun Flex settings.
  */
 
-use Drupal\Core\Installer\InstallerKernel;
-
+use Drupal\Core\Installer\InstallerKernel; 
+$platformsh = new \Platformsh\ConfigReader\Config();
 // Set up a config sync directory.
 //
 // This is defined inside the read-only "config" directory, deployed via Git.
 $settings['config_sync_directory'] = '../config/sync';
 
+
 // Configure the database.
-$databases['default']['default'] = [
-    'driver' => getenv('DB_SCHEME'),
-    'database' => getenv('DB_PATH'),
-    'username' => getenv('DB_USERNAME'),
-    'password' => getenv('DB_PASSWORD'),
-    'host' => getenv('DB_HOST'),
-    'port' => getenv('DB_PORT'),
+if ($platformsh->hasRelationship('database')) {
+  $creds = $platformsh->credentials('database');
+  $databases['default']['default'] = [
+    'driver' => $creds['scheme'],
+    'database' => $creds['path'],
+    'username' => $creds['username'],
+    'password' => $creds['password'],
+    'host' => $creds['host'],
+    'port' => $creds['port'],
+    'pdo' => [PDO::MYSQL_ATTR_COMPRESS => !empty($creds['query']['compression'])],
     'init_commands' => [
       'isolation_level' => 'SET SESSION TRANSACTION ISOLATION LEVEL READ COMMITTED',
     ],
-];
+  ];
+}
+
 
 // Enable verbose error messages on development/staging branches, but not on the production branch.
 // You may add more debug-centric settings here if desired to have them automatically enable

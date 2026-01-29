@@ -97,6 +97,7 @@ class ComposerStaticInit1c94884feafe7e7de67cff6263fe48f2
             'Psr\\Http\\Client\\' => 16,
             'Psr\\EventDispatcher\\' => 20,
             'Psr\\Container\\' => 14,
+            'Platformsh\\ConfigReader\\' => 24,
             'PhpTuf\\ComposerStager\\' => 22,
             'PhpParser\\' => 10,
             'Peast\\' => 6,
@@ -349,6 +350,10 @@ class ComposerStaticInit1c94884feafe7e7de67cff6263fe48f2
         'Psr\\Container\\' =>
         array (
             0 => __DIR__ . '/..' . '/psr/container/src',
+        ),
+        'Platformsh\\ConfigReader\\' =>
+        array (
+            0 => __DIR__ . '/..' . '/platformsh/config-reader/src',
         ),
         'PhpTuf\\ComposerStager\\' =>
         array (
