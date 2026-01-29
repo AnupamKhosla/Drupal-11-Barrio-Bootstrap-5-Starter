@@ -16,7 +16,6 @@
 
 #env vars
 .env
-.environment 
 
 #database files
 db*
