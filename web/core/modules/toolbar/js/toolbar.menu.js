@@ -102,7 +102,6 @@
       // to take them to that destination but for the menu tray to be closed
       // after clicking: otherwise the toolbar itself is obstructing the view
       // of the destination they chose.
-     
       if (!Drupal.toolbar.models.toolbarModel.get('isFixed')) {
         Drupal.toolbar.models.toolbarModel.set('activeTab', null);
       }

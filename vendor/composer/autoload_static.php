@@ -13,37 +13,22 @@ class ComposerStaticInit1c94884feafe7e7de67cff6263fe48f2
         'e69f7f6ee287b969198c3c9d6777bd38' => __DIR__ . '/..' . '/symfony/polyfill-intl-normalizer/bootstrap.php',
         'f598d06aa772fa33d905e87be6398fb1' => __DIR__ . '/..' . '/symfony/polyfill-intl-idn/bootstrap.php',
         '606a39d89246991a373564698c2d8383' => __DIR__ . '/..' . '/symfony/polyfill-php85/bootstrap.php',
-        '8825ede83f2f289127722d4e842cf7e8' => __DIR__ . '/..' . '/symfony/polyfill-intl-grapheme/bootstrap.php',
-        'b6b991a57620e2fb6b2f66f03fe9ddc2' => __DIR__ . '/..' . '/symfony/string/Resources/functions.php',
         '667aeda72477189d0494fecd327c3641' => __DIR__ . '/..' . '/symfony/var-dumper/Resources/functions/dump.php',
         '7b11c4dc42b3b3023073cb14e519683c' => __DIR__ . '/..' . '/ralouphie/getallheaders/src/getallheaders.php',
+        '8825ede83f2f289127722d4e842cf7e8' => __DIR__ . '/..' . '/symfony/polyfill-intl-grapheme/bootstrap.php',
         '9d2b9fc6db0f153a0a149fefb182415e' => __DIR__ . '/..' . '/symfony/polyfill-php84/bootstrap.php',
+        'b6b991a57620e2fb6b2f66f03fe9ddc2' => __DIR__ . '/..' . '/symfony/string/Resources/functions.php',
+        '662a729f963d39afe703c9d9b7ab4a8c' => __DIR__ . '/..' . '/symfony/polyfill-php83/bootstrap.php',
+        '37a3dc5111fe8f707ab4c132ef1dbc62' => __DIR__ . '/..' . '/guzzlehttp/guzzle/src/functions_include.php',
+        'def43f6c87e4f8dfd0c9e1b1bab14fe8' => __DIR__ . '/..' . '/symfony/polyfill-iconv/bootstrap.php',
         '89efb1254ef2d1c5d80096acd12c4098' => __DIR__ . '/..' . '/twig/twig/src/Resources/core.php',
         'ffecb95d45175fd40f75be8a23b34f90' => __DIR__ . '/..' . '/twig/twig/src/Resources/debug.php',
         'c7baa00073ee9c61edf148c51917cfb4' => __DIR__ . '/..' . '/twig/twig/src/Resources/escaper.php',
         'f844ccf1d25df8663951193c3fc307c8' => __DIR__ . '/..' . '/twig/twig/src/Resources/string_loader.php',
-        '37a3dc5111fe8f707ab4c132ef1dbc62' => __DIR__ . '/..' . '/guzzlehttp/guzzle/src/functions_include.php',
-        '662a729f963d39afe703c9d9b7ab4a8c' => __DIR__ . '/..' . '/symfony/polyfill-php83/bootstrap.php',
-        'def43f6c87e4f8dfd0c9e1b1bab14fe8' => __DIR__ . '/..' . '/symfony/polyfill-iconv/bootstrap.php',
         '2f69d3914119f042cca9e44442d5ce95' => __DIR__ . '/../..' . '/web/core/includes/bootstrap.inc',
-        '23c18046f52bef3eea034657bafda50f' => __DIR__ . '/..' . '/symfony/polyfill-php81/bootstrap.php',
-        '3109cb1a231dcd04bee1f9f620d46975' => __DIR__ . '/..' . '/paragonie/sodium_compat/autoload.php',
-        '47e1160838b5e5a10346ac4084b58c23' => __DIR__ . '/..' . '/laravel/prompts/src/helpers.php',
-        '801c31d8ed748cfa537fa45402288c95' => __DIR__ . '/..' . '/psy/psysh/src/functions.php',
     );
 
     public static $prefixLengthsPsr4 = array (
-        'p' =>
-        array (
-            'phpowermove\\docblock\\' => 21,
-            'phootwork\\lang\\' => 15,
-            'phootwork\\collection\\' => 21,
-        ),
-        'c' =>
-        array (
-            'chillerlan\\Settings\\' => 20,
-            'chillerlan\\QRCode\\' => 18,
-        ),
         'T' =>
         array (
             'Twig\\' => 5,
@@ -53,7 +38,6 @@ class ComposerStaticInit1c94884feafe7e7de67cff6263fe48f2
             'Symfony\\Polyfill\\Php85\\' => 23,
             'Symfony\\Polyfill\\Php84\\' => 23,
             'Symfony\\Polyfill\\Php83\\' => 23,
-            'Symfony\\Polyfill\\Php81\\' => 23,
             'Symfony\\Polyfill\\Mbstring\\' => 26,
             'Symfony\\Polyfill\\Intl\\Normalizer\\' => 33,
             'Symfony\\Polyfill\\Intl\\Idn\\' => 26,
@@ -85,47 +69,27 @@ class ComposerStaticInit1c94884feafe7e7de67cff6263fe48f2
         ),
         'R' =>
         array (
-            'Robo\\' => 5,
             'Revolt\\' => 7,
-            'ReCaptcha\\' => 10,
         ),
         'P' =>
         array (
-            'Psy\\' => 4,
             'Psr\\Log\\' => 8,
             'Psr\\Http\\Message\\' => 17,
             'Psr\\Http\\Client\\' => 16,
             'Psr\\EventDispatcher\\' => 20,
             'Psr\\Container\\' => 14,
-            'Platformsh\\ConfigReader\\' => 24,
             'PhpTuf\\ComposerStager\\' => 22,
-            'PhpParser\\' => 10,
             'Peast\\' => 6,
-            'ParagonIE\\Sodium\\' => 17,
-            'ParagonIE\\HiddenString\\' => 23,
-            'ParagonIE\\Halite\\' => 17,
-            'ParagonIE\\ConstantTime\\' => 23,
-        ),
-        'O' =>
-        array (
-            'Otp\\' => 4,
         ),
         'M' =>
         array (
             'Masterminds\\' => 12,
-        ),
-        'L' =>
-        array (
-            'League\\Container\\' => 17,
-            'Laravel\\Prompts\\' => 16,
         ),
         'G' =>
         array (
             'GuzzleHttp\\Psr7\\' => 16,
             'GuzzleHttp\\Promise\\' => 19,
             'GuzzleHttp\\' => 11,
-            'Grasmash\\YamlCli\\' => 17,
-            'Grasmash\\Expander\\' => 18,
         ),
         'E' =>
         array (
@@ -133,25 +97,15 @@ class ComposerStaticInit1c94884feafe7e7de67cff6263fe48f2
         ),
         'D' =>
         array (
-            'Drush\\' => 6,
             'Drupal\\Core\\' => 12,
             'Drupal\\Composer\\Plugin\\Scaffold\\' => 32,
             'Drupal\\Composer\\Plugin\\RecipeUnpack\\' => 36,
             'Drupal\\Composer\\Plugin\\ProjectMessage\\' => 38,
             'Drupal\\Component\\' => 17,
-            'DrupalCodeGenerator\\' => 20,
             'Doctrine\\Common\\Lexer\\' => 22,
-            'Dflydev\\DotAccessData\\' => 22,
         ),
         'C' =>
         array (
-            'Consolidation\\SiteProcess\\' => 26,
-            'Consolidation\\SiteAlias\\' => 24,
-            'Consolidation\\OutputFormatters\\' => 31,
-            'Consolidation\\Log\\' => 18,
-            'Consolidation\\Filter\\' => 21,
-            'Consolidation\\Config\\' => 21,
-            'Consolidation\\AnnotatedCommand\\' => 31,
             'Composer\\Semver\\' => 16,
             'Composer\\Installers\\' => 20,
         ),
@@ -162,26 +116,6 @@ class ComposerStaticInit1c94884feafe7e7de67cff6263fe48f2
     );
 
     public static $prefixDirsPsr4 = array (
-        'phpowermove\\docblock\\' =>
-        array (
-            0 => __DIR__ . '/..' . '/phpowermove/docblock/src',
-        ),
-        'phootwork\\lang\\' =>
-        array (
-            0 => __DIR__ . '/..' . '/phootwork/lang',
-        ),
-        'phootwork\\collection\\' =>
-        array (
-            0 => __DIR__ . '/..' . '/phootwork/collection',
-        ),
-        'chillerlan\\Settings\\' =>
-        array (
-            0 => __DIR__ . '/..' . '/chillerlan/php-settings-container/src',
-        ),
-        'chillerlan\\QRCode\\' =>
-        array (
-            0 => __DIR__ . '/..' . '/chillerlan/php-qrcode/src',
-        ),
         'Twig\\' =>
         array (
             0 => __DIR__ . '/..' . '/twig/twig/src',
@@ -197,10 +131,6 @@ class ComposerStaticInit1c94884feafe7e7de67cff6263fe48f2
         'Symfony\\Polyfill\\Php83\\' =>
         array (
             0 => __DIR__ . '/..' . '/symfony/polyfill-php83',
-        ),
-        'Symfony\\Polyfill\\Php81\\' =>
-        array (
-            0 => __DIR__ . '/..' . '/symfony/polyfill-php81',
         ),
         'Symfony\\Polyfill\\Mbstring\\' =>
         array (
@@ -314,21 +244,9 @@ class ComposerStaticInit1c94884feafe7e7de67cff6263fe48f2
         array (
             0 => __DIR__ . '/..' . '/symfony/psr-http-message-bridge',
         ),
-        'Robo\\' =>
-        array (
-            0 => __DIR__ . '/..' . '/consolidation/robo/src',
-        ),
         'Revolt\\' =>
         array (
             0 => __DIR__ . '/..' . '/revolt/event-loop/src',
-        ),
-        'ReCaptcha\\' =>
-        array (
-            0 => __DIR__ . '/..' . '/google/recaptcha/src/ReCaptcha',
-        ),
-        'Psy\\' =>
-        array (
-            0 => __DIR__ . '/..' . '/psy/psysh/src',
         ),
         'Psr\\Log\\' =>
         array (
@@ -351,53 +269,17 @@ class ComposerStaticInit1c94884feafe7e7de67cff6263fe48f2
         array (
             0 => __DIR__ . '/..' . '/psr/container/src',
         ),
-        'Platformsh\\ConfigReader\\' =>
-        array (
-            0 => __DIR__ . '/..' . '/platformsh/config-reader/src',
-        ),
         'PhpTuf\\ComposerStager\\' =>
         array (
             0 => __DIR__ . '/..' . '/php-tuf/composer-stager/src',
-        ),
-        'PhpParser\\' =>
-        array (
-            0 => __DIR__ . '/..' . '/nikic/php-parser/lib/PhpParser',
         ),
         'Peast\\' =>
         array (
             0 => __DIR__ . '/..' . '/mck89/peast/lib/Peast',
         ),
-        'ParagonIE\\Sodium\\' =>
-        array (
-            0 => __DIR__ . '/..' . '/paragonie/sodium_compat/namespaced',
-        ),
-        'ParagonIE\\HiddenString\\' =>
-        array (
-            0 => __DIR__ . '/..' . '/paragonie/hidden-string/src',
-        ),
-        'ParagonIE\\Halite\\' =>
-        array (
-            0 => __DIR__ . '/..' . '/paragonie/halite/src',
-        ),
-        'ParagonIE\\ConstantTime\\' =>
-        array (
-            0 => __DIR__ . '/..' . '/paragonie/constant_time_encoding/src',
-        ),
-        'Otp\\' =>
-        array (
-            0 => __DIR__ . '/..' . '/christian-riesen/otp/src',
-        ),
         'Masterminds\\' =>
         array (
             0 => __DIR__ . '/..' . '/masterminds/html5/src',
-        ),
-        'League\\Container\\' =>
-        array (
-            0 => __DIR__ . '/..' . '/league/container/src',
-        ),
-        'Laravel\\Prompts\\' =>
-        array (
-            0 => __DIR__ . '/..' . '/laravel/prompts/src',
         ),
         'GuzzleHttp\\Psr7\\' =>
         array (
@@ -411,21 +293,9 @@ class ComposerStaticInit1c94884feafe7e7de67cff6263fe48f2
         array (
             0 => __DIR__ . '/..' . '/guzzlehttp/guzzle/src',
         ),
-        'Grasmash\\YamlCli\\' =>
-        array (
-            0 => __DIR__ . '/..' . '/grasmash/yaml-cli/src',
-        ),
-        'Grasmash\\Expander\\' =>
-        array (
-            0 => __DIR__ . '/..' . '/grasmash/expander/src',
-        ),
         'Egulias\\EmailValidator\\' =>
         array (
             0 => __DIR__ . '/..' . '/egulias/email-validator/src',
-        ),
-        'Drush\\' =>
-        array (
-            0 => __DIR__ . '/..' . '/drush/drush/src',
         ),
         'Drupal\\Core\\' =>
         array (
@@ -447,45 +317,9 @@ class ComposerStaticInit1c94884feafe7e7de67cff6263fe48f2
         array (
             0 => __DIR__ . '/../..' . '/web/core/lib/Drupal/Component',
         ),
-        'DrupalCodeGenerator\\' =>
-        array (
-            0 => __DIR__ . '/..' . '/chi-teck/drupal-code-generator/src',
-        ),
         'Doctrine\\Common\\Lexer\\' =>
         array (
             0 => __DIR__ . '/..' . '/doctrine/lexer/src',
-        ),
-        'Dflydev\\DotAccessData\\' =>
-        array (
-            0 => __DIR__ . '/..' . '/dflydev/dot-access-data/src',
-        ),
-        'Consolidation\\SiteProcess\\' =>
-        array (
-            0 => __DIR__ . '/..' . '/consolidation/site-process/src',
-        ),
-        'Consolidation\\SiteAlias\\' =>
-        array (
-            0 => __DIR__ . '/..' . '/consolidation/site-alias/src',
-        ),
-        'Consolidation\\OutputFormatters\\' =>
-        array (
-            0 => __DIR__ . '/..' . '/consolidation/output-formatters/src',
-        ),
-        'Consolidation\\Log\\' =>
-        array (
-            0 => __DIR__ . '/..' . '/consolidation/log/src',
-        ),
-        'Consolidation\\Filter\\' =>
-        array (
-            0 => __DIR__ . '/..' . '/consolidation/filter-via-dot-access-data/src',
-        ),
-        'Consolidation\\Config\\' =>
-        array (
-            0 => __DIR__ . '/..' . '/consolidation/config/src',
-        ),
-        'Consolidation\\AnnotatedCommand\\' =>
-        array (
-            0 => __DIR__ . '/..' . '/consolidation/annotated-command/src',
         ),
         'Composer\\Semver\\' =>
         array (
@@ -519,7 +353,6 @@ class ComposerStaticInit1c94884feafe7e7de67cff6263fe48f2
     );
 
     public static $classMap = array (
-        'CURLStringFile' => __DIR__ . '/..' . '/symfony/polyfill-php81/Resources/stubs/CURLStringFile.php',
         'Composer\\InstalledVersions' => __DIR__ . '/..' . '/composer/InstalledVersions.php',
         'DateError' => __DIR__ . '/..' . '/symfony/polyfill-php83/Resources/stubs/DateError.php',
         'DateException' => __DIR__ . '/..' . '/symfony/polyfill-php83/Resources/stubs/DateException.php',
@@ -564,7 +397,6 @@ class ComposerStaticInit1c94884feafe7e7de67cff6263fe48f2
         'PEAR_Exception' => __DIR__ . '/..' . '/pear/pear_exception/PEAR/Exception.php',
         'Psr\\Container\\ContainerInterface' => __DIR__ . '/..' . '/psr/container/src/ContainerInterface.php',
         'ReflectionConstant' => __DIR__ . '/..' . '/symfony/polyfill-php84/Resources/stubs/ReflectionConstant.php',
-        'ReturnTypeWillChange' => __DIR__ . '/..' . '/symfony/polyfill-php81/Resources/stubs/ReturnTypeWillChange.php',
         'SQLite3Exception' => __DIR__ . '/..' . '/symfony/polyfill-php83/Resources/stubs/SQLite3Exception.php',
         'SebastianBergmann\\Diff\\Chunk' => __DIR__ . '/..' . '/sebastian/diff/src/Chunk.php',
         'SebastianBergmann\\Diff\\ConfigurationException' => __DIR__ . '/..' . '/sebastian/diff/src/Exception/ConfigurationException.php',

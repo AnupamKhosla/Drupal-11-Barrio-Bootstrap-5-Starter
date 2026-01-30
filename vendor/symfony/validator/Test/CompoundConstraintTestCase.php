@@ -13,7 +13,6 @@ namespace Symfony\Component\Validator\Test;
 
 use PHPUnit\Framework\ExpectationFailedException;
 use PHPUnit\Framework\TestCase;
-use Symfony\Component\Translation\IdentityTranslator;
 use Symfony\Component\Validator\Constraint;
 use Symfony\Component\Validator\Constraints\Compound;
 use Symfony\Component\Validator\Constraints\CompoundValidator;
@@ -22,6 +21,7 @@ use Symfony\Component\Validator\Context\ExecutionContext;
 use Symfony\Component\Validator\Context\ExecutionContextInterface;
 use Symfony\Component\Validator\Validation;
 use Symfony\Component\Validator\Validator\ValidatorInterface;
+use Symfony\Contracts\Translation\TranslatorInterface;
 
 /**
  * A test case to ease testing Compound Constraints.
@@ -58,7 +58,10 @@ abstract class CompoundConstraintTestCase extends TestCase
 
     protected function createContext(?ValidatorInterface $validator = null): ExecutionContextInterface
     {
-        return new ExecutionContext($validator ?? $this->createValidator(), $this->root, new IdentityTranslator());
+        $translator = $this->createMock(TranslatorInterface::class);
+        $translator->expects($this->any())->method('trans')->willReturnArgument(0);
+
+        return new ExecutionContext($validator ?? $this->createValidator(), $this->root, $translator);
     }
 
     public function assertViolationsRaisedByCompound(Constraint|array $constraints): void

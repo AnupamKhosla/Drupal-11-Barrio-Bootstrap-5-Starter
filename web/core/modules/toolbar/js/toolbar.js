@@ -2,6 +2,7 @@
  * @file
  * Defines the behavior of the Drupal administration toolbar.
  */
+
 (function ($, Drupal, drupalSettings) {
   // Set UI-impacting toolbar classes before Drupal behaviors initialize to
   // minimize flickering on load. This is encapsulated in a function to
@@ -176,7 +177,6 @@
             $(document).trigger('drupalToolbarOrientationChange', orientation);
           })
           .on('change:activeTab', (model, tab) => {
-            
             $(document).trigger('drupalToolbarTabChange', tab);
           })
           .on('change:activeTray', (model, tray) => {

@@ -335,6 +335,11 @@ class AutowirePass extends AbstractRecursivePass
                         $value = $this->doProcessValue($value);
                     } elseif ($lazy = $attribute->lazy) {
                         $value ??= $getValue();
+                        $type = $this->resolveProxyType($type, $value->getType());
+                        $definition = (new Definition($type))
+                            ->setFactory('current')
+                            ->setArguments([[$value]])
+                            ->setLazy(true);
 
                         if (!\is_array($lazy)) {
                             if (str_contains($type, '|')) {
@@ -343,14 +348,8 @@ class AutowirePass extends AbstractRecursivePass
                             $lazy = str_contains($type, '&') ? explode('&', $type) : [];
                         }
 
-                        $proxyType = $lazy ? $type : $this->resolveProxyType($type, $value);
-                        $definition = (new Definition($proxyType))
-                            ->setFactory('current')
-                            ->setArguments([[$value]])
-                            ->setLazy(true);
-
                         if ($lazy) {
-                            if (!$this->container->getReflectionClass($proxyType, false)) {
+                            if (!class_exists($type) && !interface_exists($type, false)) {
                                 $definition->setClass('object');
                             }
                             foreach ($lazy as $v) {
@@ -758,7 +757,7 @@ class AutowirePass extends AbstractRecursivePass
         $resolvedType = $this->container->findDefinition($serviceId)->getClass();
         $resolvedType = $this->container->getParameterBag()->resolveValue($resolvedType);
 
-        if (!$resolvedType || !$this->container->getReflectionClass($resolvedType, false)) {
+        if (!$resolvedType || !class_exists($resolvedType, false) && !interface_exists($resolvedType, false)) {
             return $originalType;
         }
 
