@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "6eaf666e6982eb7ebc51a216ad9ea8ef",
+    "content-hash": "e1fe0a9e37e64e9fda0b4f99041dce47",
     "packages": [
         {
             "name": "asm89/stack-cors",
@@ -1330,6 +1330,101 @@
                 "GPL-2.0-or-later"
             ],
             "description": "Core and its dependencies with known-compatible minor versions. Require this project INSTEAD OF drupal/core."
+        },
+        {
+            "name": "drupal/olivero_dark_mode",
+            "version": "1.0.1",
+            "source": {
+                "type": "git",
+                "url": "https://git.drupalcode.org/project/olivero_dark_mode.git",
+                "reference": "1.0.1"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://ftp.drupal.org/files/projects/olivero_dark_mode-1.0.1.zip",
+                "reference": "1.0.1",
+                "shasum": "f8f3f490cc7c68ae691b2c8b180e44f508f6db46"
+            },
+            "require": {
+                "drupal/core": "^11"
+            },
+            "type": "drupal-theme",
+            "extra": {
+                "drupal": {
+                    "version": "1.0.1",
+                    "datestamp": "1760976213",
+                    "security-coverage": {
+                        "status": "covered",
+                        "message": "Covered by Drupal's security advisory policy"
+                    }
+                }
+            },
+            "notification-url": "https://packages.drupal.org/8/downloads",
+            "license": [
+                "GPL-2.0-or-later"
+            ],
+            "authors": [
+                {
+                    "name": "johnalbin",
+                    "homepage": "https://www.drupal.org/user/32095"
+                }
+            ],
+            "description": "A sub-theme of Drupal’s Olivero that adds dark mode.",
+            "homepage": "https://www.drupal.org/project/olivero_dark_mode",
+            "support": {
+                "source": "https://git.drupalcode.org/project/olivero_dark_mode"
+            }
+        },
+        {
+            "name": "drupal/olivero_dark_switch",
+            "version": "1.0.0-alpha1",
+            "source": {
+                "type": "git",
+                "url": "https://git.drupalcode.org/project/olivero_dark_switch.git",
+                "reference": "1.0.0-alpha1"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://ftp.drupal.org/files/projects/olivero_dark_switch-1.0.0-alpha1.zip",
+                "reference": "1.0.0-alpha1",
+                "shasum": "42230387a1a001064231e87c6a1cc39b048a2060"
+            },
+            "require": {
+                "drupal/core": "^10.4 || ^11.1",
+                "php": "^8.1"
+            },
+            "type": "drupal-module",
+            "extra": {
+                "drupal": {
+                    "version": "1.0.0-alpha1",
+                    "datestamp": "1759881942",
+                    "security-coverage": {
+                        "status": "not-covered",
+                        "message": "Alpha releases are not covered by Drupal security advisories."
+                    }
+                }
+            },
+            "notification-url": "https://packages.drupal.org/8/downloads",
+            "license": [
+                "GPL-2.0-or-later"
+            ],
+            "authors": [
+                {
+                    "name": "Lacey-Anne Sanderson",
+                    "homepage": "https://github.com/laceysanderson/",
+                    "role": "Lead Developer"
+                }
+            ],
+            "description": "A Drupal extension module which provides dark theme for Olivero and a toggle to change it.",
+            "homepage": "https://www.drupal.org/project/olivero_dark_switch",
+            "keywords": [
+                "Drupal",
+                "Olivero"
+            ],
+            "support": {
+                "source": "https://git.drupalcode.org/project/olivero_dark_switch",
+                "issues": "https://www.drupal.org/project/issues/olivero_dark_switch"
+            }
         },
         {
             "name": "drush/drush",
@@ -6190,7 +6285,9 @@
     "packages-dev": [],
     "aliases": [],
     "minimum-stability": "stable",
-    "stability-flags": {},
+    "stability-flags": {
+        "drupal/olivero_dark_switch": 15
+    },
     "prefer-stable": true,
     "prefer-lowest": false,
     "platform": {},
