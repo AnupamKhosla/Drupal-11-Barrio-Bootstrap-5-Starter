@@ -1,27 +1,28 @@
-# Olivero Dark Mode – Drupal Theme
+## Site Links
 
-Custom Drupal theme extending **Olivero** to add proper **dark mode support** and optional manual toggle.
+* Main: https://main-bvxea6i-7izlvla7egqey.au.platformsh.site/
+* Dev: https://dev-54ta5gq-7izlvla7egqey.au.platformsh.site/
+
+# Drupal 11 Barrio Bootstrap 5 Starter
+A teaching-focused Drupal site that demonstrates how the **Barrio** theme integrates and implements **Bootstrap** in a real project.
+
+This as an open-source **"Starter Kit"** for the Drupal community.
+
+The goal is to create a complete **Reference Implementation** of the Bootstrap 5 Barrio theme. Unlike a blank theme installation, this project will come pre-configured with working examples of every Bootstrap component (Carousels, Tooltips, Modals, Accordions) implemented correctly using Drupal Blocks and Views.
+
+It effectively functions as a **"Living Documentation"** — developers can clone it to see exactly how to implement complex Bootstrap features in Drupal 11 without guessing.
 
 ## Project Goals
 
-* Add reliable dark mode to Olivero (Drupal 11)
-* Support system preference (`prefers-color-scheme`)
-* Optional manual dark/light toggle
-* Centralized CSS variable overrides
-* No hacks to core Olivero files
+* Teach how Barrio uses Bootstrap structure, utilities, and components
+* Show practical theme layer patterns in Drupal 11
+* Provide a clean reference implementation for learning and demos
+* Keep the setup straightforward and reproducible
 
 ## Tech Stack
 
 * Drupal 11
-* Olivero base theme
+* Barrio base theme
+* Bootstrap
 * DDEV local environment
-* Custom theme (sub-theme of Olivero)
-
-## How Dark Mode Works
-
-Drupal 11 Olivero no longer ships full dark-mode overrides.
-This project adds:
-
-* Dark color variable overrides
-* Component-level dark styles
-* Optional JS toggle (adds class or data-attribute to `<html>`)
+* Custom sub-theme of Barrio
