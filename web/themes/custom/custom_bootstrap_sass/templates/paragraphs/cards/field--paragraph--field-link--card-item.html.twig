@@ -1,0 +1,26 @@
+{#
+/**
+ * @file
+ * Theme override for a link to a file.
+ *
+ * Available variables:
+ * - attributes: The HTML attributes for the containing element.
+ * - link: A link to the file.
+ * - icon: The icon image representing the file type.
+ *
+ * @see template_preprocess_file_link()
+ */
+#}
+
+{% for item in items %}
+  {# 1. Get the URL string properly #}
+  {% set link_url = item.content['#url'].toString() %}
+  
+  {# 2. Get the Title (Text) #}
+  {% set link_text = item.content['#title'] %}
+
+  {# 3. Output #}
+  <a href="{{ link_url }}" class="btn btn-primary">
+    {{ link_text }}
+  </a>
+{% endfor %}
