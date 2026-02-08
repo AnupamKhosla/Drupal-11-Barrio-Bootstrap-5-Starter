@@ -38,6 +38,10 @@ module:
   path: 0
   path_alias: 0
   search: 0
+  search_api: 0
+  search_api_solr: 0
+  search_api_solr_admin: 0
+  search_api_solr_devel: 0
   shortcut: 0
   single_content_sync: 0
   system: 0
