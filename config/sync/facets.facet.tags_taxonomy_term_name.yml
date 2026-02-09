@@ -3,19 +3,19 @@ langcode: en-gb
 status: true
 dependencies:
   config:
-    - search_api.index.content_all
-    - views.view.tagsindex
+    - search_api.index.indexedsolr
+    - views.view.solrindexedsearch
   module:
     - search_api
 id: tags_taxonomy_term_name
-name: TagsFacet
+name: TitleSolr
 weight: 0
 min_count: 1
 missing: false
 missing_label: others
 url_alias: tags_taxonomy_term_name
-facet_source_id: 'search_api:views_page__tagsindex__page_1'
-field_identifier: name
+facet_source_id: 'search_api:views_page__solrindexedsearch__page_1'
+field_identifier: title
 query_operator: or
 hard_limit: 0
 exclude: false
